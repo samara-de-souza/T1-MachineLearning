@@ -42,7 +42,7 @@ Para manter reprodutibilidade e evitar duplicação, as análises detalhadas est
 – **Consistência**: Árvore e NB concordam fortemente no topo; K-NN (perm) também traz as mesmas variáveis, com “Tuition fees” e “Debtor” muito altos — coerente com a natureza baseada em distância.  
 – **Senso prático**: resultados fazem sentido no domínio: rendimento recente e situação financeira são preditores fortes de evasão/sucesso.
 
-### Análise comparativa (respostas objetivas)
+### Análise comparativa
 - **Os resultados fizeram sentido?** Sim. Variáveis diretamente relacionadas ao desempenho recente do aluno (aprovadas/notas dos 1º e 2º semestres) e à situação financeira (tuition/debtor) explicam a permanência, matrícula ativa ou graduação.  
 - **Houve concordância entre modelos?** Alta. A árvore (Gini/Permutação) e o NB (|μ₂−μ₀|/σ) colocam “Curricular units 2nd sem (approved)” no topo. O K-NN por permutação também destaca desempenho curricular e adiciona forte peso para “Tuition fees up to date_1”/“Debtor_1”.  
 - **Ferramentas de interpretabilidade usadas:**  
@@ -63,4 +63,4 @@ Para manter reprodutibilidade e evitar duplicação, as análises detalhadas est
 – Para stakeholders que precisam regras claras, Árvore é a escolha.  
 – K-NN entrega desempenho similar, mas interpretabilidade depende de métodos pós-hoc.  
 – NB é simples, rápido e razoavelmente interpretável via estatísticas, mas perdeu um pouco de F1.  
-– Em todos os casos, as mesmas variáveis de rendimento aparecem como fatores-chave, reforçando confiança nos insights.
+– Em todos os casos, as mesmas variáveis de rendimento aparecem como fatores-chave, reforçando confiança nos resultados.
